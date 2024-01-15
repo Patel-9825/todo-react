@@ -1,21 +1,42 @@
-import React from "react";
+import React, {useState} from "react";
 
 const App = () => {
-  return <>
+
+  const [inputList, setInputList] = useState("");
+  const [items, setItems] = useState([]);
+
+  const itemEvent = (event) => {
+    setInputList(event.target.value);
+  };
+
+  const listOfItems = () => {
+    setItems((oldItems) => {
+      return [...oldItems, inputList]
+    });
+  };
+
+
+  return (
+    <>
     <div className="main-div">
       <div className="center-div">
         <br />
         <h1>ToDo List</h1>
         <br />
-        <input type="text" placeholder="Add a Items" />
-        <button> + </button>
+        <input type="text" placeholder="Add a Items" onChange={itemEvent} />
+        <button onClick={listOfItems}> + </button>
 
         <ol>
-          <li>buy apple</li>
+            {/* <li>{inputList}</li> */}
+            
+            {items.map((itemval) => {
+              return <li> {itemval} </li>;
+            })}
         </ol>
       </div>
     </div>
-  </>;
+    </>
+  );
 };
 
 export default App;
