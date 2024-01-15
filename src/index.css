@@ -85,7 +85,7 @@ ol li {
   align-items: center;
 }
 
-.todo_style .fa-items{
+.todo_style .fa-times{
   width: 20px;
   height: 20px;
   display: flex;
@@ -98,8 +98,8 @@ ol li {
   box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
 }
 
-.todo_style .fa-items{
-  color: crimson;
+.todo_style .fa-times:hover{
+  background-color: crimson;
 }
 
 @media (max-width: 768px) {
