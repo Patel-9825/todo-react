@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Patel-9825/todo-react.git/static/css/main.7e8c827c.css",
+    "main.js": "/Patel-9825/todo-react.git/static/js/main.5a819927.js",
+    "index.html": "/Patel-9825/todo-react.git/index.html",
+    "main.7e8c827c.css.map": "/Patel-9825/todo-react.git/static/css/main.7e8c827c.css.map",
+    "main.5a819927.js.map": "/Patel-9825/todo-react.git/static/js/main.5a819927.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7e8c827c.css",
+    "static/js/main.5a819927.js"
+  ]
+}
